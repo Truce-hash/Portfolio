@@ -1,0 +1,16 @@
+.body{
+    font-family:'Roboto Slab', serif;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.homepage-container{
+    margin: 5px;
+    padding: 5px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
