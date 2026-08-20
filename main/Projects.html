@@ -1,62 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="projectsStyle.css">
+
 </head>
 <body>
-    <div class="homepage-header">
-       <div class="title">
-        <h2>My Portfolio</h2>
-        <div class="Navbar">          
-            <div class="nav-item">
-                <a href="HomePage.html">Home</a>
-            </div>
-            <div class="nav-item">
-                <a href="About.html">About Me</a>
-            </div>
-            <div class="nav-item">
-                <a href="Projects.html">My Work</a>
-            </div>
-            <div class="nav-item">
-                <a href="Contact.html">Contact</a>
 
-            </div>
-            <!-- End of navigation bar -->
-            
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="starfield"></canvas>
+<div class="nebula nebula-1"></div>
+<div class="nebula nebula-2"></div>
+<div class="nebula nebula-3"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="portfolio.html">&#9738; <span>DEV</span>.PORTFOLIO</a>
+  <a href="portfolio.html" class="nav-back">Back to Portfolio</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-tag">Mission Log · Project Archive</div>
+  <h1 class="page-hero-title">Systems launched<br><em>into the void</em></h1>
+  <p class="page-hero-sub">Solo builds, team missions, and everything in between</p>
+</div>
+
+<!-- STATS BAR -->
+<div class="page-stats">
+  <div class="stat-item"><span class="stat-n">09</span><span class="stat-l">Total Projects</span></div>
+  <div class="stat-item"><span class="stat-n">04</span><span class="stat-l">Solo Missions</span></div>
+  <div class="stat-item"><span class="stat-n">05</span><span class="stat-l">Team Collaborations</span></div>
+  <div class="stat-item"><span class="stat-n">12+</span><span class="stat-l">Technologies Used</span></div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterCards(this,'all')">All Projects</button>
+  <button class="filter-btn" onclick="filterCards(this,'solo')">Solo Missions</button>
+  <button class="filter-btn collab" onclick="filterCards(this,'collab')">Team Collaborations</button>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects-page">
+
+  <!-- SOLO PROJECTS GROUP -->
+  <div class="project-group" id="group-solo" data-group="solo">
+    <div class="group-header reveal">
+      <div class="group-badge solo"><span class="group-badge-dot"></span>Solo Missions</div>
+      <h2 class="group-title">Independent <em>launches</em></h2>
+      <div class="group-rule"></div>
+      <span class="group-count">04 projects</span>
+    </div>
+    <div class="cards-grid two-col">
+
+      <div class="project-card reveal" data-type="solo">
+        <div class="card-meta">
+          <span class="card-tag solo-tag">Featured · Full-Stack</span>
+          <span class="card-year">2024</span>
         </div>
-       </div>
-    </div><!-- End of header section -->
+        <h3 class="card-title">Nexus — Real-time Collaboration Platform</h3>
+        <p class="card-desc">Distributed engine for 50k+ concurrent users. Conflict-free real-time document editing via operational transformation, WebSocket orchestration across geo-distributed nodes, and end-to-end encryption at every layer.</p>
+        <div class="card-stack">
+          <span class="stack-tag">React</span><span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Redis</span><span class="stack-tag">WebSockets</span>
+          <span class="stack-tag">PostgreSQL</span><span class="stack-tag">Kubernetes</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
-    <div class="projects-container"><!-- Main content section -->
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I've worked on<br> 
-            and currently working on:</p>
-       <div class="project-container">
-        <div class="project-item"></div>
-        <a href="">Project 1</a>
-       </div>
+      <div class="project-card reveal" data-type="solo">
+        <div class="card-meta">
+          <span class="card-tag solo-tag">API · Backend</span>
+          <span class="card-year">2024</span>
+        </div>
+        <h3 class="card-title">Stellar — Headless Commerce API</h3>
+        <p class="card-desc">High-throughput e-commerce backend processing 10k+ orders/hour. GraphQL gateway, event-sourced inventory, and ML-powered fraud detection running at the edge.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Go</span><span class="stack-tag">GraphQL</span>
+          <span class="stack-tag">Kafka</span><span class="stack-tag">AWS Lambda</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
-        <div class="project-item"></div>
-        <a href="">Project 1</a>
-       </div>
+      <div class="project-card reveal" data-type="solo">
+        <div class="card-meta">
+          <span class="card-tag solo-tag">ML · DevTool</span>
+          <span class="card-year">2023</span>
+        </div>
+        <h3 class="card-title">Void — Observability Dashboard</h3>
+        <p class="card-desc">Full-stack monitoring platform with anomaly detection. Processes 500M+ log events daily with sub-second query performance and predictive alerting before incidents become outages.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Next.js</span><span class="stack-tag">Python</span>
+          <span class="stack-tag">ClickHouse</span><span class="stack-tag">Grafana</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
-        <div class="project-item"></div>
-        <a href="">Project 1</a>
-       </div>
+      <div class="project-card reveal" data-type="solo">
+        <div class="card-meta">
+          <span class="card-tag solo-tag">Open Source · CLI</span>
+          <span class="card-year">2023</span>
+        </div>
+        <h3 class="card-title">Pulsar — CLI Deployment Tool</h3>
+        <p class="card-desc">Zero-config deployment CLI with intelligent rollback, canary releases, and multi-cloud support. 2k+ GitHub stars and a growing community of contributors across 40+ countries.</p>
+        <div class="card-stack">
+          <span class="stack-tag">TypeScript</span><span class="stack-tag">Docker</span>
+          <span class="stack-tag">Terraform</span><span class="stack-tag">GitHub Actions</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
-        <div class="project-item"></div>
-        <a href="">Project 1</a>
-       </div>
+    </div>
+  </div>
 
-        <div class="project-item"></div>
-        <a href="">Project 1</a>
-       </div>
+  <!-- TEAM COLLABORATION PROJECTS GROUP -->
+  <div class="project-group" id="group-collab" data-group="collab">
+    <div class="group-header reveal">
+      <div class="group-badge collab"><span class="group-badge-dot"></span>Team Collaborations</div>
+      <h2 class="group-title">Built with a <em>crew</em></h2>
+      <div class="group-rule"></div>
+      <span class="group-count">05 projects</span>
+    </div>
+    <div class="cards-grid">
 
+      <div class="project-card collab-card reveal" data-type="collab">
+        <div class="card-meta">
+          <span class="card-tag collab-tag">Information Website· SaaS</span>
+          <span class="card-year">2024</span>
+        </div>
+        <h3 class="card-title">Dance Culture Website — HR Management Suite</h3>
+        <div class="card-team">
+          <span class="team-label">Team</span>
+          <div class="team-avatars">
+            <div class="team-avatar">J</div><div class="team-avatar">M</div>
+            <div class="team-avatar">S</div><div class="team-avatar">A</div>
+          </div>
+          <span class="team-size">6 devellopers</span>
+        </div>
+        <p class="card-desc">End-to-end HR platform with payroll automation, leave management, and performance tracking. Served 80+ enterprise clients with SOC 2 Type II compliance baked in from day one.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Next.js</span><span class="stack-tag">NestJS</span>
+          <span class="stack-tag">PostgreSQL</span><span class="stack-tag">AWS</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
+      <div class="project-card collab-card reveal" data-type="collab">
+        <div class="card-meta">
+          <span class="card-tag collab-tag">Fintech · Real-time</span>
+          <span class="card-year">2024</span>
+        </div>
+        <h3 class="card-title">Student Management System</h3>
+        <div class="card-team">
+          <span class="team-label">Team</span>
+          <div class="team-avatars">
+            <div class="team-avatar">T</div><div class="team-avatar">R</div>
+            <div class="team-avatar">K</div>
+          </div>
+          <span class="team-size">5 developers</span>
+        </div>
+        <p class="card-desc">Low-latency analytics dashboard for institutional traders. Processes tick data at microsecond resolution with real-time P&L, risk metrics, and custom alert pipelines.</p>
+        <div class="card-stack">
+          <span class="stack-tag">React</span><span class="stack-tag">Go</span>
+          <span class="stack-tag">TimescaleDB</span><span class="stack-tag">WebSockets</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
+      <div class="project-card collab-card reveal" data-type="collab">
+        <div class="card-meta">
+          <span class="card-tag collab-tag">EdTech · Platform</span>
+          <span class="card-year">2023</span>
+        </div>
+        <h3 class="card-title">Advanced Calculator</h3>
+        <div class="card-team">
+          <span class="team-label">Team</span>
+          <div class="team-avatars">
+            <div class="team-avatar">L</div><div class="team-avatar">P</div>
+            <div class="team-avatar">N</div><div class="team-avatar">D</div>
+            <div class="team-avatar">V</div>
+          </div>
+          <span class="team-size">10 developers</span>
+        </div>
+        <p class="card-desc">Full-featured LMS used by 15 universities across southern Africa. Adaptive learning paths, live classroom streaming, and AI-powered assignment grading at scale.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Vue 3</span><span class="stack-tag">Django</span>
+          <span class="stack-tag">Celery</span><span class="stack-tag">Redis</span><span class="stack-tag">GCP</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
+      <div class="project-card collab-card reveal" data-type="collab">
+        <div class="card-meta">
+          <span class="card-tag collab-tag">Enterprise Website</span>
+          <span class="card-year">2023</span>
+        </div>
+        <h3 class="card-title">Software Development Agency</h3>
+        <div class="card-team">
+          <span class="team-label">Team</span>
+          <div class="team-avatars">
+            <div class="team-avatar">C</div><div class="team-avatar">B</div>
+            <div class="team-avatar">F</div>
+          </div>
+          <span class="team-size">5 developers</span>
+        </div>
+        <p class="card-desc">IoT data ingestion platform connecting 12,000+ urban sensors across traffic, air quality, and utility systems. Real-time city dashboard with predictive maintenance alerts.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Node.js</span><span class="stack-tag">MQTT</span>
+          <span class="stack-tag">InfluxDB</span><span class="stack-tag">Svelte</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
 
+      <div class="project-card collab-card reveal" data-type="collab">
+        <div class="card-meta">
+          <span class="card-tag collab-tag">Health · Mobile</span>
+          <span class="card-year">2022</span>
+        </div>
+        <h3 class="card-title">Student Assitant Application</h3>
+        <div class="card-team">
+          <span class="team-label">Team</span>
+          <div class="team-avatars">
+            <div class="team-avatar">O</div><div class="team-avatar">G</div>
+            <div class="team-avatar">I</div><div class="team-avatar">W</div>
+          </div>
+          <span class="team-size">5 engineers</span>
+        </div>
+        <p class="card-desc">A student assistant application that has database support, user authentication and authorization using supabase.</p>
+        <div class="card-stack">
+          <span class="stack-tag">Dart</span><span class="stack-tag">SupabaseDB</span>
+          <span class="stack-tag">Github</span><span class="stack-tag">Visual Studio Code</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span class="footer-copy">© 2025 · Crafted from stardust & JavaScript</span>
+  <a href="portfolio.html" class="footer-back">← Return to Portfolio</a>
+</footer>
+
+<script src="projectsScript.js"></script>
 </body>
 </html>

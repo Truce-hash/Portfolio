@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Kamohelo Phatsoane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolioStyle.css">
+
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="starfield"></canvas>
+
+<div class="nebula nebula-1"></div>
+<div class="nebula nebula-2"></div>
+<div class="nebula nebula-3"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#hero">&#9738; <span>DEV</span>.PORTFOLIO</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Software Engineer · Full-Stack Developer</div>
+      <h1 class="hero-name">
+        Welcome, I'm<br>
+        <em>Kamohelo Phatsoane</em>
+      </h1>
+      <p class="hero-role">Full-Stack · Cloud · Systems Architecture</p>
+      <p class="hero-desc">
+        Crafting digital universes from backend constellations to frontend nebulae — each line of code a star in a larger story.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="horizon">
+      <span class="horizon-label">RA 05h 34m · Dec +22°</span>
+      <div class="horizon-line"></div>
+      <div class="horizon-dot"></div>
+      <div class="horizon-line"></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+    <div></div>
+    <div class="portfolio-image">
+      <img src="./assets/S (90).jpg" alt="portfolio image" height="500" width="500">
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-number">01 / About</div>
+          <h2 class="section-title">The <em>architect</em><br>behind the code</h2>
+        </div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Like the cosmos, <strong>great software</strong> is built on invisible forces — elegant logic, disciplined structure, and the courage to ship something into the void and watch it come alive.</p>
+          <p>I'm a full-stack developer who moves fluidly between <strong>frontend interfaces</strong> and deep backend systems. I architect scalable APIs, craft pixel-precise UIs, and obsess over the performance that nobody notices until it's gone.</p>
+          <p>Every project is a new star system to map. Every bug is a dark matter problem waiting to be solved with enough <strong>curiosity and caffeine</strong>.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Years in orbit</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Projects launched</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Technologies mastered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Lines of curiosity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-number">02 / Skills</div>
+          <h2 class="section-title">The <em>constellation</em><br>of my craft</h2>
+        </div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-node reveal">
+          <span class="skill-icon">◈</span>
+          <div class="skill-name">Frontend</div>
+          <div class="skill-items"> · Dart · JavaScript<br>Html&CSS · TypeScript<br>React · </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div>
+        </div>
+        <div class="skill-node reveal">
+          <span class="skill-icon">◉</span>
+          <div class="skill-name">Backend</div>
+          <div class="skill-items">C# · Python · Dart<br>REST · GraphQL · gRPC<br>Microservices · Event-driven</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+        </div>
+        <div class="skill-node reveal">
+          <span class="skill-icon">◎</span>
+          <div class="skill-name">Databases</div>
+          <div class="skill-items">PostgreSQL · Supabase · Oracle<br>Elasticsearch · Cassandra<br>Database design & optimization</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-node reveal">
+          <span class="skill-icon">⬡</span>
+          <div class="skill-name">Cloud & DevOps</div>
+          <div class="skill-items">AWS · GCP · Docker<br>Kubernetes · Terraform<br>CI/CD · GitHub Actions</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-node reveal">
+          <span class="skill-icon">◇</span>
+          <div class="skill-name">Architecture</div>
+          <div class="skill-items">System design · DDD<br>Clean Architecture · CQRS<br>API design · Performance</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:87%"></div></div>
+        </div>
+        <div class="skill-node reveal">
+          <span class="skill-icon">✦</span>
+          <div class="skill-name">Tooling & More</div>
+          <div class="skill-items">Git · Linux · Bash<br>Testing · TDD · Agile<br>Technical writing<br>Frameworks · React, Angular, Vue </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS TEASER -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-number">03 / Projects</div>
+          <h2 class="section-title">Systems I've<br><em>sent into orbit</em></h2>
+        </div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="projects-teaser reveal">
+        <div class="teaser-stats">
+          <div class="teaser-stat">
+            <span class="teaser-num">07</span>
+            <span class="teaser-label">Total Projects</span>
+          </div>
+          <div class="teaser-divider"></div>
+          <div class="teaser-stat">
+            <span class="teaser-num">03</span>
+            <span class="teaser-label">Solo Missions</span>
+          </div>
+          <div class="teaser-divider"></div>
+          <div class="teaser-stat">
+            <span class="teaser-num">05</span>
+            <span class="teaser-label">Team Collaborations</span>
+          </div>
+        </div>
+        <div class="teaser-preview">
+          <div class="teaser-card">
+            <div class="teaser-card-tag solo">Solo Mission</div>
+            <div class="teaser-card-name">Nexus Platform</div>
+            <div class="teaser-card-sub">Real-time · 50k+ users</div>
+          </div>
+          <div class="teaser-card">
+            <div class="teaser-card-tag collab">Team Collab</div>
+            <div class="teaser-card-name">Aurora Suite</div>
+            <div class="teaser-card-sub">HR · 80+ enterprise clients</div>
+          </div>
+          <div class="teaser-card">
+            <div class="teaser-card-tag collab">Team Collab</div>
+            <div class="teaser-card-name">Orbit LMS</div>
+            <div class="teaser-card-sub">EdTech · 15 universities</div>
+          </div>
+          <div class="teaser-card teaser-card-more">
+            <div class="teaser-more-num">+6</div>
+            <div class="teaser-more-label">more projects</div>
+          </div>
+        </div>
+        <a href="projects.html" class="btn-projects">
+          <span>Explore All Projects</span>
+          <span class="btn-projects-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-number">04 / Experience</div>
+          <h2 class="section-title">The <em>journey</em><br>through deep space</h2>
+        </div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2022 — Present</div>
+          <div class="timeline-role">Senior Full-Stack Engineer</div>
+          <div class="timeline-company">Horizon Labs · Remote</div>
+          <p class="timeline-desc">Lead engineer on a distributed SaaS platform serving 200k users. Architected migration from monolith to microservices, reducing deployment time by 80% and improving system reliability to 99.98% uptime.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2020 — 2022</div>
+          <div class="timeline-role">Full-Stack Developer</div>
+          <div class="timeline-company">Nebula Systems · Cape Town</div>
+          <p class="timeline-desc">Built real-time financial dashboards processing $50M+ in daily transactions. Implemented a custom WebSocket protocol reducing latency from 800ms to under 40ms across the entire data pipeline.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-period">2019 — 2020</div>
+          <div class="timeline-role">Frontend Engineer</div>
+          <div class="timeline-company">Orbit Digital · Bloemfontein</div>
+          <p class="timeline-desc">Developed accessible, performant React applications for enterprise clients. Established the company's first design system, adopted across 12 internal products and dramatically improving UI consistency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <p class="contact-coords reveal">Available for new missions</p>
+      <h2 class="contact-title reveal">Let's build<br>something <em>stellar</em></h2>
+      <p class="contact-sub reveal">Open to full-time roles, freelance missions, and interesting collaborations</p>
+      <div class="contact-links reveal">
+        <a href="mailto:hello@example.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">kphatsoane588@gmail.com</span>
+        </a>
+        <div class="contact-divider"></div>
+        <a href="https://github.com/Truce-hash" target="_blank" class="contact-link">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-value">github.com/Truce-hash</span>
+        </a>
+        <div class="contact-divider"></div>
+        <a href="https://www.linkedin.com/in/kamohelo-phatsoane-2650883b6" target="_blank" class="contact-link">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">linkedin.com/in/kamohelo-phatsoane</span>
+        </a>
+        <div class="contact-divider"></div>
+        <a href="#" class="contact-link">
+          <span class="contact-link-label">CV / Résumé</span>
+          <span class="contact-link-value">Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-copy">© 2026 · Crafted from stardust & JavaScript</span>
+  <span class="footer-coords">· Bloemfontein · ZA</span>
+</footer>
+
+<script src="portfolioScript.js"></script>
+
+</body>
+</html>
