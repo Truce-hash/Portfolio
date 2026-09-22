@@ -21,3 +21,5 @@ I'm a full time IT Student at Central University of Technology. I excel at build
 
 I'm currently learning Python, I'm also interested in learning typescript and everything AI.
 
+### Github Stats
+![Kamohelo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Truce-hash&show_icons=true&theme=radical)
