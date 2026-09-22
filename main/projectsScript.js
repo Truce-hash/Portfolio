@@ -34,7 +34,7 @@ function animate(t) { drawStars(t); drawMilkyWay(); requestAnimationFrame(animat
 resize(); createStars(); requestAnimationFrame(animate);
 window.addEventListener('resize', () => { resize(); createStars(); });
 
-// CURSOR
+// CURSOR STYLE
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
 let mx=-100,my=-100,rx=-100,ry=-100;
