@@ -1,6 +1,5 @@
-### Hello there, I am Kamohelo Phatsoane
+# Hello there, I am Kamohelo Phatsoane
 
-<img src="./main/assets/Kamohelov2.jpeg">
 
 I'm a full time IT Student at Central University of Technology. I excel at building full-stack websites with Html&CSS, Javascript and C#. I also create cross-platform applications with flutter. My c# skills extend to ASP.NET applications.
 
