@@ -58,7 +58,7 @@
   });
 
   // ─── CURSOR (mouse only; one delegated listener instead of per-element ones) ───
-  const HOVERABLE = 'a, button, .project-card, .skill-node, .teaser-card, .stat-card, .filter-btn, .contact-link';
+  const HOVERABLE = 'a, button, .skill-node, .teaser-card, .stat-card, .filter-btn, .contact-link';
   if (finePointer) {
     const dot = $('#cursor'), ring = $('#cursor-ring');
     let mx = -100, my = -100, rx = -100, ry = -100;

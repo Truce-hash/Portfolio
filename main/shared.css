@@ -1,8 +1,3 @@
-/* ============================================================
-   shared.css — loaded AFTER portfolioStyle.css / projectsStyle.css
-   Fixes + interaction polish common to both pages
-   ============================================================ */
-
 html { scroll-padding-top: 90px; }
 
 /* ── Page fade between portfolio <-> projects ─────────────── */
@@ -127,3 +122,6 @@ nav.nav-hidden { transform: translateY(-100%); }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ── Cards without a link yet: no pointer affordances ─────── */
+div.project-card .card-arrow { display: none; }
