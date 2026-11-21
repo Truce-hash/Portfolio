@@ -1,14 +1,10 @@
-<!-- Add a banner or profile picture here, e.g.
+<!-- Add a banner or profile picture here
 <p align="center"><img src="images/banner.png" alt="Banner" width="100%"></p>
 -->
 
 # 👋 Hello there, I'm Kamohelo Phatsoane
 
 I'm a full-time IT student at **Central University of Technology**. I excel at building full-stack websites with **HTML & CSS, JavaScript and C#**. I also create cross-platform applications with **Flutter**, and my C# skills extend to **ASP.NET** applications.
-
-<!-- Add a photo or GIF here, e.g.
-<img src="images/me.png" alt="Kamohelo" width="300">
--->
 
 ## 🛠️ My Tech Stack
 
