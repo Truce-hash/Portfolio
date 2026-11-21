@@ -106,7 +106,7 @@
     transition: background 0.3s;
   }
   .nav-logo {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
     font-weight: 200;
     color: var(--star-cold);
@@ -168,8 +168,8 @@
     opacity: 0.5;
   }
   .hero-name {
-    font-family: 'JetBrains Mono', serif;
-    font-size: clamp(50, 8vw, 90);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(40px, 8vw, 90px);
     font-weight: 300;
     line-height: 1.0;
     letter-spacing: -0.01em;
@@ -192,7 +192,7 @@
   }
   .hero-desc {
     margin-top: 40px;
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
@@ -313,7 +313,7 @@
     margin-bottom: 4px;
   }
   .section-title {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: clamp(25px, 5vw, 45px);
     font-weight: 200;
     line-height: 1.1;
@@ -331,7 +331,7 @@
     align-items: start;
   }
   .about-text p {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 15px;
     font-weight: 200;
     line-height: 1.9;
@@ -364,7 +364,7 @@
   .stat-card:hover { border-color: rgba(168,200,255,0.2); }
   .stat-card:hover::before { opacity: 1; }
   .stat-num {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 48px;
     font-weight: 200;
     color: var(--star-gold);
@@ -442,7 +442,7 @@
     transform-origin: left;
     transition: transform 1s cubic-bezier(0.4,0,0.2,1);
   }
-  .skill-node.visible .skill-bar-fill { transform: scaleX(1); }
+  .skill-node.in .skill-bar-fill { transform: scaleX(1); }
 
   /* PROJECTS */
   #projects { background: linear-gradient(to bottom, transparent, rgba(4,14,46,0.2), transparent); }
@@ -495,7 +495,7 @@
     letter-spacing: 0.1em;
   }
   .project-title {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 28px;
     font-weight: 400;
     color: var(--star-white);
@@ -574,7 +574,7 @@
     margin-bottom: 10px;
   }
   .timeline-role {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 26px;
     font-weight: 400;
     color: var(--star-white);
@@ -588,7 +588,7 @@
     margin-bottom: 16px;
   }
   .timeline-desc {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.8;
@@ -620,7 +620,7 @@
     text-transform: uppercase;
   }
   .contact-title {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: clamp(44px, 7vw, 80px);
     font-weight: 300;
     line-height: 1.1;
@@ -628,7 +628,7 @@
   }
   .contact-title em { font-style: italic; color: var(--star-blue); }
   .contact-sub {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 18px;
     font-weight: 300;
     font-style: italic;
@@ -733,7 +733,7 @@
   }
   .teaser-stat { display: flex; flex-direction: column; gap: 6px; }
   .teaser-num {
-    font-family: 'JetBrains Mono', serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 50px; font-weight: 200; line-height: 1; color: var(--star-gold);
   }
   .teaser-label { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(168,200,255,0.35); }
@@ -752,13 +752,13 @@
   }
   .teaser-card-tag.solo { color: var(--accent); border-color: rgba(74,143,255,0.25); background: rgba(74,143,255,0.08); }
   .teaser-card-tag.collab { color: #b48aff; border-color: rgba(180,138,255,0.25); background: rgba(180,138,255,0.08); }
-  .teaser-card-name { font-family: 'JetBrains Mono', serif; font-size: 18px; font-weight: 400; color: var(--star-white); }
+  .teaser-card-name { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 400; color: var(--star-white); }
   .teaser-card-sub { font-size: 9px; color: rgba(168,200,255,0.35); letter-spacing: 0.1em; }
   .teaser-card-more {
     align-items: center; justify-content: center;
     background: rgba(4,14,46,0.6); border: 1px dashed rgba(168,200,255,0.1);
   }
-  .teaser-more-num { font-family: 'JetBrains Mono', serif; font-size: 40px; font-weight: 300; color: rgba(168,200,255,0.25); }
+  .teaser-more-num { font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 300; color: rgba(168,200,255,0.25); }
   .teaser-more-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(168,200,255,0.2); }
 
   .btn-projects {

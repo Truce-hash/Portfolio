@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Kamohelo Phatsoane</title>
+<title>Kamohelo Phatsoane</title>
+<meta name="description" content="Kamohelo Phatsoane — aspiring full-stack software engineer. Projects, skills and contact details.">
+<meta name="theme-color" content="#000205">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="portfolioStyle.css">
+<link rel="stylesheet" href="shared.css">
 
 </head>
 <body>
@@ -24,13 +26,14 @@
 <!-- NAV -->
 <nav id="nav">
   <a class="nav-logo" href="#hero">&#9738; <span>DEV</span>.PORTFOLIO</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
 </nav>
 
 <main>
@@ -62,8 +65,6 @@
       <div class="scroll-line"></div>
       Scroll to explore
     </div>
-    <div></div>
-    
   </section>
 
   <!-- ABOUT -->
@@ -118,13 +119,13 @@
         <div class="skill-node reveal">
           <span class="skill-icon">◈</span>
           <div class="skill-name">Frontend</div>
-          <div class="skill-items"> · Dart · JavaScript<br>Html&CSS</div>
+          <div class="skill-items">Dart · JavaScript<br>HTML & CSS</div>
           <div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div>
         </div>
         <div class="skill-node reveal">
           <span class="skill-icon">◉</span>
           <div class="skill-name">Backend</div>
-          <div class="skill-items">C# · Python · Dart<br> TypeScript</div>
+          <div class="skill-items">C# · Python · Dart<br>TypeScript</div>
           <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
         </div>
         <div class="skill-node reveal">
@@ -148,7 +149,7 @@
         <div class="skill-node reveal">
           <span class="skill-icon">✦</span>
           <div class="skill-name">Tooling & More</div>
-          <div class="skill-items">Git · Linux · Bash<br>Testing · TDD · Agile<br>Technical writing<br>Frameworks · React, Angular, Vue </div>
+          <div class="skill-items">Git · Linux · Bash<br>Testing · TDD · Agile<br>Technical writing<br>Frameworks · React, Angular, Vue</div>
           <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
         </div>
       </div>
@@ -191,7 +192,7 @@
           <div class="teaser-card">
             <div class="teaser-card-tag collab">Team Collab</div>
             <div class="teaser-card-name">Dance Culture Website</div>
-            <div class="teaser-card-sub">Team ·Collaboration</div>
+            <div class="teaser-card-sub">Team · Collaboration</div>
           </div>
           <div class="teaser-card">
             <div class="teaser-card-tag collab">Team Collab</div>
@@ -239,17 +240,17 @@
       <h2 class="contact-title reveal">Let's build<br>something <em>stellar</em></h2>
       <p class="contact-sub reveal">Open to part-time roles, freelance missions, and interesting collaborations</p>
       <div class="contact-links reveal">
-        <a href="mailto:hello@example.com" class="contact-link">
+        <a href="mailto:kphatsoane588@gmail.com" class="contact-link">
           <span class="contact-link-label">Email</span>
           <span class="contact-link-value">kphatsoane588@gmail.com</span>
         </a>
         <div class="contact-divider"></div>
-        <a href="https://github.com/Truce-hash" target="_blank" class="contact-link">
+        <a href="https://github.com/Truce-hash" target="_blank" rel="noopener noreferrer" class="contact-link">
           <span class="contact-link-label">GitHub</span>
           <span class="contact-link-value">github.com/Truce-hash</span>
         </a>
         <div class="contact-divider"></div>
-        <a href="https://www.linkedin.com/in/kamohelo-phatsoane-2650883b6" target="_blank" class="contact-link">
+        <a href="https://www.linkedin.com/in/kamohelo-phatsoane-2650883b6" target="_blank" rel="noopener noreferrer" class="contact-link">
           <span class="contact-link-label">LinkedIn</span>
           <span class="contact-link-value">linkedin.com/in/kamohelo-phatsoane</span>
         </a>
@@ -265,6 +266,7 @@
   <span class="footer-coords">· Bloemfontein · ZA</span>
 </footer>
 
+<script src="shared.js"></script>
 <script src="portfolioScript.js"></script>
 
 </body>

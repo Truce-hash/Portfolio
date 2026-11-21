@@ -1,4 +1,4 @@
-
+/*
 // ─── STARFIELD ───────────────────────────────────────────────
 const canvas = document.getElementById('starfield');
 const ctx = canvas.getContext('2d');
@@ -151,4 +151,27 @@ document.addEventListener('mousemove', e => {
     const f = (i + 1) * 8;
     n.style.transform = `translate(${dx * f}px, ${dy * f}px)`;
   });
-});
+});*/
+
+// Page-specific behaviour for portfolio.html (everything else lives in shared.js)
+
+// ─── MOBILE MENU ─────────────────────────────────────────────
+const toggle = document.querySelector('.nav-toggle');
+const links  = document.querySelector('.nav-links');
+function setMenu(open) {
+  links.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', String(open));
+}
+toggle.addEventListener('click', () => setMenu(!links.classList.contains('open')));
+links.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+// ─── ACTIVE NAV LINK (scroll-spy) ────────────────────────────
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    links.querySelectorAll('a').forEach(a =>
+      a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));

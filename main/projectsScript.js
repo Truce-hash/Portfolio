@@ -1,4 +1,4 @@
-// STARFIELD
+/*// STARFIELD
 const canvas = document.getElementById('starfield');
 const ctx = canvas.getContext('2d');
 let stars = [], W, H;
@@ -106,4 +106,27 @@ function filterCards(btn, type) {
       g.style.display = g.dataset.group === type ? '' : 'none';
     });
   }
+}*/
+
+// Page-specific behaviour for projects.html (everything else lives in shared.js)
+
+function filterCards(btn, type) {
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-pressed', 'false');
+  });
+  btn.classList.add('active');
+  btn.setAttribute('aria-pressed', 'true');
+
+  document.querySelectorAll('.project-group').forEach(g => {
+    const show = type === 'all' || g.dataset.group === type;
+    g.style.display = show ? '' : 'none';
+    if (!show) return;
+    // groups that were hidden never intersected, so reveal them now and play a staggered entrance
+    g.querySelectorAll('.reveal').forEach(el => window.settleReveal(el));
+    g.querySelectorAll('.project-card').forEach((c, i) => c.style.setProperty('--i', i));
+    g.classList.remove('group-enter');
+    void g.offsetWidth;                 // restart the animation
+    g.classList.add('group-enter');
+  });
 }

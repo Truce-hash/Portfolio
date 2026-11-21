@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — Portfolio</title>
+<title>Projects — Kamohelo Phatsoane</title>
+<meta name="description" content="Solo builds and team collaborations by Kamohelo Phatsoane.">
+<meta name="theme-color" content="#000205">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="projectsStyle.css">
+<link rel="stylesheet" href="shared.css">
 
 </head>
 <body>
@@ -42,9 +45,9 @@
 
 <!-- FILTER BAR -->
 <div class="filter-bar">
-  <button class="filter-btn active" onclick="filterCards(this,'all')">All Projects</button>
-  <button class="filter-btn" onclick="filterCards(this,'solo')">Solo Missions</button>
-  <button class="filter-btn collab" onclick="filterCards(this,'collab')">Team Collaborations</button>
+  <button class="filter-btn active" aria-pressed="true" onclick="filterCards(this,'all')">All Projects</button>
+  <button class="filter-btn" aria-pressed="false" onclick="filterCards(this,'solo')">Solo Missions</button>
+  <button class="filter-btn collab" aria-pressed="false" onclick="filterCards(this,'collab')">Team Collaborations</button>
 </div>
 
 <!-- PROJECTS -->
@@ -96,7 +99,7 @@
         <h3 class="card-title">The Panic Button</h3>
         <p class="card-desc">Full-stack application for emergency response and communication. It caters to the needs of users in critical or dangerous situations.</p>
         <div class="card-stack">
-          <span class="stack-tag">C#</span><span class="stack-tag"></span>
+          <span class="stack-tag">C#</span>
           <span class="stack-tag">Flutter</span><span class="stack-tag">HTML&CSS</span>
         </div>
         <span class="card-arrow">↗</span>
@@ -125,7 +128,7 @@
       <div class="group-badge collab"><span class="group-badge-dot"></span>Team Collaborations</div>
       <h2 class="group-title">Built with a <em>crew</em></h2>
       <div class="group-rule"></div>
-      <span class="group-count">05 projects</span>
+      <span class="group-count">06 projects</span>
     </div>
     <div class="cards-grid">
 
@@ -268,10 +271,11 @@
 </div>
 
 <footer>
-  <span class="footer-copy">© 2025 · Crafted from stardust & JavaScript</span>
+  <span class="footer-copy">© 2026 · Crafted from stardust & JavaScript</span>
   <a href="portfolio.html" class="footer-back">← Return to Portfolio</a>
 </footer>
 
+<script src="shared.js"></script>
 <script src="projectsScript.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
- :root {
+:root {
     --void: #000205;
     --deep: #010818;
     --midnight: #040e2e;
@@ -200,7 +200,7 @@
     display: flex; align-items: center; gap: 8px; margin-bottom: 20px;
   }
   .team-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(180,138,255,0.45); }
-  .team-avatars { display: flex; gap: -4px; }
+  .team-avatars { display: flex; }
   .team-avatar {
     width: 20px; height: 20px; border-radius: 50%;
     background: rgba(180,138,255,0.15); border: 1px solid rgba(180,138,255,0.25);
