@@ -4,7 +4,7 @@
 
 # 👋 Hello there, I'm Kamohelo Phatsoane
 
-I'm a full-time IT student at **Central University of Technology**. I excel at building full-stack websites with **HTML & CSS, JavaScript and C#**. I also create cross-platform applications with **Flutter**, and my C# skills extend to **ASP.NET** applications.
+I'm a software developer and full-time IT student at **Central University of Technology**, focused on building functional, scalable, and user-oriented applications. My experience spans full-stack web development using **HTML, CSS, JavaScript, and C#**, cross-platform mobile development with **Flutter**, and web application development with **ASP.NET**. I approach development with a problem-solving mindset, a willingness to tackle complex challenges, and a drive to continually refine my skills and build meaningful software.
 
 ## 🛠️ My Tech Stack
 
